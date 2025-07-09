@@ -1,0 +1,45 @@
+.buttons {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%); /*to modify inside elements of div class*/
+}
+/*to get centre of screen*/
+#counter-display{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.buttons button{
+    background-color: rgb(24, 164, 117);
+    color: rgb(236, 236, 236);
+    border: 0px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgb(66, 66, 66);
+    transition: background-color 300ms ease-in, color 300ms ease-in, box-shadow 500ms ease-in-out;
+}
+/*
+box-shadow: [x-offset] [y-offset] [blur-radius] [optional spread-radius] [color];
+
+*/
+
+.buttons button:hover{
+    background-color: rgb(46, 241, 176);
+    color: rgb(41, 41, 41);
+    border: 0px;
+    box-shadow: 2px 2px 20px rgb(27, 255, 152);
+    padding: 10px;
+    transition: background-color 300ms ease-in, color 300ms ease-in, box-shadow 500ms ease-in-out;
+
+}
+
+/*
+or you can use:
+#increase, #decrease, #reset{
+    background-color: rgb(24, 164, 117);
+    color: rgb(236, 236, 236);
+    border: 0px;
+    padding: 10px;
+}
+*/

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+    <h1 id="lives_counter">Guesses: </h1> <button id="reset">Reset</button>
+    <h2 style="letter-spacing: 12px;" id="input_answer"></h2>
+
+    <div id="input_field">
+        <label>Input Letter:</label>
+        <input type="text" maxlength="1" id="input_letter">
+        <button id="submit_btn">Submit</button>
+    </div>
+
+    <ul id="history">
+    </ul>
+
+    <!-- Scripts -->
+    <script src="hangman.js"></script>
+</body>
+</html>
