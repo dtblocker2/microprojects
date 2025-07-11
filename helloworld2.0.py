@@ -1,14 +1,17 @@
 import time
+import random
+
 characters = '''abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,./!@#$%^&*()-_=+[]\\||{};:'"<>? '''
-k = input('Enter your text: \n')
+k = 'hello world!'
 
 output= ''
 for i in k:
-    for j in characters:
+    while True:
+        j= random.choice(characters)
         if i==j:
             output += j
             break
-        time.sleep(0.01)
+        time.sleep(0.003)
         print(output+j)
 
 print(output)
