@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negraph</title>
+    <link rel="stylesheet" href="negraph.css" />
+  </head>
+  <body>
+    <div class="contents">
+      <div class="title">
+        <h1>Ne-Graph</h1>
+        <p>can you say N Word</p>
+      </div>
+
+      <div class="inputsContainer">
+        <form action="">
+          <label for="">Enter Name: </label>
+          <input type="text" placeholder="Name" />
+
+          <label for="">Enter Age: </label>
+          <input type="text" placeholder="Age" />
+
+          <label for="">Enter Skin Color: </label>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            id="colorRangeSlider"
+          />
+        </form>
+      </div>
+
+      <div class="graph">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+
+    <div class="credits">
+      &#169; This project was inspirred by Key & Peele Video
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="negraph.js"></script>
+    <!-- <script src="test1.js"></script> -->
+  </body>
+</html>
